@@ -1,0 +1,43 @@
+{
+  "name": "electron-as-browser",
+  "version": "1.0.0",
+  "description": "Make electron like browser easier and flexible.",
+  "keywords": [
+    "electron",
+    "browser",
+    "navigation",
+    "tab",
+    "addressbar"
+  ],
+  "main": "index.js",
+  "author": "hui.liu",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hulufei/electron-as-browser"
+  },
+  "files": [
+    "index.js",
+    "useConnect.js",
+    "control.js"
+  ],
+  "scripts": {
+    "docs": "documentation build *.js -f html -o docs",
+    "start:control": "npx babel --watch example/renderer/control.jsx --out-file example/renderer/control-compiled.js",
+    "start": "electron example/main.js"
+  },
+  "dependencies": {
+    "electron-log": "^3.0.7"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "classnames": "^2.2.6",
+    "electron": "6.0.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "file-url": "^2.0.2"
+  }
+}

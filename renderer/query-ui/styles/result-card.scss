@@ -1,0 +1,54 @@
+.result-card {
+	margin-bottom: 10px;
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+
+	.result-card__content {
+		width: 275px;
+	    color: black;
+	    border-radius: 15px;
+	   	border-left: 10px solid rgb(240,240,240);
+	    border-right: 10px solid rgb(240,240,240);
+
+	    overflow: hidden;
+	}
+
+	.result-card__header {
+		background-color: rgb(240,240,240);
+		padding: 10px 2px;
+		font-size: 12px;
+		font-style: italic;
+		font-family: "Poppins";
+		color: rgb(150,150,150);
+	}
+	.result-card__body {
+		border-radius: 15px;
+		background-color: white;
+		padding: 10px;
+		font-size: 14px;
+		font-style: italic;
+
+		font-family: "Poppins";
+
+
+	}
+	.result-card__footer {
+		background-color: rgb(240,240,240);
+		padding: 10px 2px;
+		display: flex;
+		justify-content: flex-end;
+		text-align: right;
+		align-items: center;
+		span {
+			background-color: rgb(140,160,190);
+			padding: 2px 4px;
+			color: white;
+			font-family: "Poppins";
+			font-size: 12px;
+			border: 1px solid rgb(140,160,190);
+			border-radius: 5px;
+			cursor: pointer;
+		}
+	}
+}

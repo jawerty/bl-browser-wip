@@ -1,0 +1,42 @@
+.header {
+	height:  55px;
+	border-bottom:  2px solid rgb(120,140,170);
+	background-color: rgb(170,190,220);
+	color: rgb(70,90,120);
+
+	.tabs {
+		display: flex;
+		align-items: center;
+		height: 100%;
+
+		.tab {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding: 10px;
+			width: 50%;
+			font-family: "Poppins";
+			font-weight: 600;
+			font-size: 15px;
+			letter-spacing: 1px;
+			cursor: pointer;
+			transition-property: all;
+			transition-duration: .1s;
+			transition-timing-function: ease-in;
+			&:hover {
+				background-color: rgb(120,140,170) !important;
+				color: rgb(200,220,250) !important;
+			}
+			height: 100%;
+
+			&:not(:last-child) {
+				border-right: 2px solid rgb(120,140,170)
+			}
+
+			&.active {
+				background-color: rgb(100,120,150);
+				color: rgb(200,220,250);
+			}
+		}
+	}
+}

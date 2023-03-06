@@ -1,0 +1,41 @@
+.query-form {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	 max-height: calc(100vh - 55px);
+
+	 .query-form__failure-overlay, .query-form__loading-overlay {
+	 	height: 100%;
+	 	width: 100%;
+	 	background-color: rgba(50,70,100, .8);
+	 	position: absolute;
+	 	top:0;
+	 	left:0;
+	 	display: flex;
+	 	align-items: center;
+	 	justify-content: center;
+
+	 	.query-form__failure-overlay__message, .query-form__loading-overlay__message {
+	 		padding: 15px;
+	 		border: 1px  solid rgb(120,140,170);
+	 		background-color: rgb(220,220,220);
+	 		color: black;
+	 		font-family: "Poppins";
+	 		font-family: 14px;
+	 		text-align: center;
+	 		border-radius: 3px;
+	 		width: 150px;
+	 		height: auto;
+	 	}
+	 }
+
+	 .query-form__link-query-info {
+	 	border-bottom: 1px solid rgb(120,140,170);
+	 	padding: 10px;
+	 	font-size: 14px;
+	 	font-family: "Poppins";
+	 	color: rgb(50,70,100);
+	 }
+
+}
