@@ -1,4 +1,4 @@
-# bluelion
+# bluelion (wip)
 An AI augmented web browser (WIP)
 
 bluelion is a web browser with a fully self hosted ChatGPT-like bot. You can search/browse the web through AI automated interactions. 
